@@ -4,5 +4,5 @@ package com.javarush.task.pro.task11.task1127;
 Телефон в наследство
 */
 
-public class Jphone implements SmartPhone {
+public class Jphone extends SmartPhone {
 }
