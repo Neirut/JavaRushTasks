@@ -1,0 +1,815 @@
+Subject: [PATCH] 05.02.2023 laptop
+---
+Index: out.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out.log b/out.log
+--- a/out.log	(revision 7f6769de7e022a94c48db288b64ceb7d5bdf07f9)
++++ b/out.log	(date 1675633776220)
+@@ -5182,3 +5182,804 @@
+ 2022-08-25 14:55:59 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+ 2022-08-25 14:55:59 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+ 2022-08-25 14:55:59 INFO  ApacheHttpClient.startGA(36) - GAService started.
++2022-12-21 21:19:44 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
++2022-12-21 21:19:44 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.01 ----------
++
++2022-12-21 21:19:44 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2022-12-21 21:19:44 INFO  ApacheHttpClient.startGA(36) - GAService started.
++2022-12-21 21:19:51 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
++
++2022-12-21 21:19:51 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
++2022-12-21 21:25:42 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
++2022-12-21 21:25:42 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.01 ----------
++
++2022-12-21 21:25:42 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2022-12-21 21:25:42 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2022-12-21 21:25:42 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2022-12-21 21:25:43 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
++2022-12-21 21:25:43 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
++2022-12-21 21:25:43 INFO  ApacheHttpClient.startGA(36) - GAService started.
++2022-12-21 21:27:00 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
++
++2022-12-21 21:27:01 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
++2022-12-21 21:27:01 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
++2022-12-21 21:27:02 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
++2022-12-24 14:27:07 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
++2022-12-24 14:27:07 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.01 ----------
++
++2022-12-24 14:27:09 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2022-12-24 14:27:09 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2022-12-24 14:27:09 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2022-12-24 14:27:09 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
++2022-12-24 14:27:09 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
++2022-12-24 14:27:09 INFO  ApacheHttpClient.startGA(36) - GAService started.
++2022-12-24 14:29:41 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
++
++2022-12-24 14:29:42 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
++2022-12-24 14:29:42 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
++2023-01-09 17:28:29 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
++2023-01-09 17:28:29 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.01 ----------
++
++2023-01-09 17:28:41 INFO  HttpsURLConnectionClient.startGA(36) - GAService started.
++2023-01-09 17:28:45 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
++
++2023-01-09 17:28:46 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
++2023-01-09 17:43:40 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
++2023-01-09 17:43:40 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.01 ----------
++
++2023-01-09 17:43:52 ERROR ApacheHttpClient.getServerAvailabilityStatus(568) - Error while checking server availability.
++java.util.concurrent.ExecutionException: org.apache.http.ConnectionClosedException: Connection closed
++	at org.apache.http.concurrent.BasicFuture.getResult(BasicFuture.java:70)
++	at org.apache.http.concurrent.BasicFuture.get(BasicFuture.java:80)
++	at com.homework.plugin.client.ApacheHttpClient.getResponseCode(ApacheHttpClient.java:577)
++	at com.homework.plugin.client.ApacheHttpClient.getServerAvailabilityStatus(ApacheHttpClient.java:546)
++	at com.homework.plugin.extension.ProjectStartupHandler.runActivity(ProjectStartupHandler.java:85)
++	at com.intellij.ide.startup.impl.StartupManagerImpl.runActivityAndMeasureDuration(StartupManagerImpl.kt:340)
++	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runActivityAndMeasureDuration(StartupManagerImpl.kt:66)
++	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$2$3.invoke$lambda-0(StartupManagerImpl.kt:295)
++	at com.intellij.openapi.project.DumbServiceImpl.doRun(DumbServiceImpl.java:388)
++	at com.intellij.openapi.project.DumbServiceImpl.updateFinished(DumbServiceImpl.java:380)
++	at com.intellij.openapi.project.TrackedEdtActivityService$TrackedEdtActivity.run(TrackedEdtActivityService.java:66)
++	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:209)
++	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:21)
++	at com.intellij.openapi.application.TransactionGuardImpl$1.run(TransactionGuardImpl.java:191)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.openapi.application.impl.ApplicationImpl$3.run(ApplicationImpl.java:429)
++	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:74)
++	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:114)
++	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:36)
++	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
++	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:779)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:749)
++	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
++	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:756)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:774)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:105)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
++	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
++	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
++Caused by: org.apache.http.ConnectionClosedException: Connection closed
++	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.endOfInput(HttpAsyncRequestExecutor.java:344)
++	at org.apache.http.impl.nio.client.InternalRequestExecutor.endOfInput(InternalRequestExecutor.java:132)
++	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:261)
++	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:81)
++	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:39)
++	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:121)
++	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)
++	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)
++	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)
++	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)
++	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
++	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
++	at java.base/java.lang.Thread.run(Thread.java:833)
++2023-01-09 17:43:55 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
++2023-01-09 19:01:00 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
++2023-01-09 19:01:00 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.02 ----------
++
++2023-01-09 19:01:00 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2023-01-09 19:01:01 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
++2023-01-09 19:01:01 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
++2023-01-09 19:01:01 INFO  ApacheHttpClient.startGA(36) - GAService started.
++2023-01-09 19:05:02 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
++2023-01-09 19:05:02 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
++2023-01-09 19:05:04 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
++2023-01-09 19:05:04 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/Taras/IdeaProjects/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task13/task1309
++2023-01-09 19:05:04 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
++2023-01-09 19:05:48 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
++
++2023-01-09 19:05:48 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
++2023-01-09 19:05:49 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
++2023-01-09 19:05:49 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
++2023-01-17 15:37:58 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
++2023-01-17 15:37:58 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.02 ----------
++
++2023-01-17 15:37:58 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2023-01-17 15:37:58 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2023-01-17 15:37:58 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
++2023-01-17 15:37:58 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
++2023-01-17 15:37:58 INFO  ApacheHttpClient.startGA(36) - GAService started.
++2023-01-17 15:38:02 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
++
++2023-01-17 15:38:02 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
++2023-01-24 17:33:41 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
++2023-01-24 17:33:41 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.02 ----------
++
++2023-01-24 17:33:41 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
++2023-01-24 17:33:42 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
++2023-01-24 17:33:42 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
++2023-01-24 17:33:42 INFO  ApacheHttpClient.startGA(36) - GAService started.
++2023-01-24 17:34:28 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
++
++2023-01-24 17:34:28 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
++2023-01-31 18:41:53 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
++2023-01-31 18:41:53 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.02 ----------
++
++2023-01-31 18:42:23 INFO  HttpsURLConnectionClient.refreshUserInfo(828) - responseCode = 200
++2023-01-31 18:42:23 INFO  HttpsURLConnectionClient.refreshUserInfo(846) - User information received.
++2023-01-31 18:42:23 INFO  HttpsURLConnectionClient.startGA(36) - GAService started.
++2023-01-31 18:46:41 ERROR HttpsURLConnectionClient.processExceptionGetWebResource(106) - (super) : Error while accessing the remote resource: https://javarush.com/downloads/ide/plugin-descriptor-with-libs.xml	Be sure the network is accessible and try again.
++java.net.SocketException: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
++	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:325)
++	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
++	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
++	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
++	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
++	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
++	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
++	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
++	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
++	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
++	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
++	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
++	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:580)
++	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
++	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
++	at com.homework.plugin.client.HttpsURLConnectionClient.getWebResourceAsStream(HttpsURLConnectionClient.java:640)
++	at com.homework.plugin.PluginUtil.isPluginNeedUpdate(PluginUtil.java:501)
++	at com.homework.plugin.button.AbstractButton.checkPluginVersion(AbstractButton.java:52)
++	at com.homework.plugin.button.AbstractButton.performCheck(AbstractButton.java:33)
++	at com.homework.plugin.button.SelectTaskButton.actionPerformed(SelectTaskButton.java:27)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.actionPerformed(ActionButton.java:195)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.lambda$performAction$0(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.ex.ActionUtil.performDumbAwareWithCallbacks(ActionUtil.java:346)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.performAction(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.processMouseEvent(ActionButton.java:462)
++	at java.desktop/java.awt.Component.processEvent(Component.java:6413)
++	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
++	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5022)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
++	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
++	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
++	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2802)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:781)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:754)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:752)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:751)
++	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
++	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.java:831)
++	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:753)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:774)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:113)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
++	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
++	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
++2023-01-31 18:46:41 ERROR PluginUtil.isPluginNeedUpdate(552) - Error while verifying the version of the plugin.
++com.fasterxml.jackson.core.JsonParseException: Unexpected End-of-input in prolog
++ at [row,col {unknown-source}]: [1,1]
++	at com.fasterxml.jackson.dataformat.xml.util.StaxUtil.throwAsParseException(StaxUtil.java:37)
++	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:657)
++	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:536)
++	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:29)
++	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:827)
++	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3058)
++	at com.homework.plugin.PluginUtil.isPluginNeedUpdate(PluginUtil.java:502)
++	at com.homework.plugin.button.AbstractButton.checkPluginVersion(AbstractButton.java:52)
++	at com.homework.plugin.button.AbstractButton.performCheck(AbstractButton.java:33)
++	at com.homework.plugin.button.SelectTaskButton.actionPerformed(SelectTaskButton.java:27)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.actionPerformed(ActionButton.java:195)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.lambda$performAction$0(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.ex.ActionUtil.performDumbAwareWithCallbacks(ActionUtil.java:346)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.performAction(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.processMouseEvent(ActionButton.java:462)
++	at java.desktop/java.awt.Component.processEvent(Component.java:6413)
++	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
++	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5022)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
++	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
++	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
++	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2802)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:781)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:754)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:752)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:751)
++	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
++	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.java:831)
++	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:753)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:774)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:113)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
++	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
++	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
++Caused by: com.fasterxml.aalto.WFCException: Unexpected End-of-input in prolog
++ at [row,col {unknown-source}]: [1,1]
++	at com.fasterxml.aalto.stax.StreamReaderImpl.throwWfe(StreamReaderImpl.java:1777)
++	at com.fasterxml.aalto.stax.StreamReaderImpl.throwUnexpectedEOI(StreamReaderImpl.java:1796)
++	at com.fasterxml.aalto.stax.StreamReaderImpl.handlePrologEoi(StreamReaderImpl.java:1756)
++	at com.fasterxml.aalto.stax.StreamReaderImpl.next(StreamReaderImpl.java:810)
++	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:653)
++	... 52 more
++2023-01-31 18:46:48 INFO  HttpsURLConnectionClient.getFilteredTasks(256) - responseCode = 200
++2023-01-31 18:48:37 INFO  HttpsURLConnectionClient.getTaskTemplateInfo(282) - responseCode = 200
++2023-01-31 18:53:39 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 18:53:43 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 18:53:45 INFO  HttpsURLConnectionClient.manualComplete(38) - responseCode = 200
++2023-01-31 18:53:45 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 18:54:03 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 18:54:04 INFO  HttpsURLConnectionClient.getFilteredTasks(256) - responseCode = 200
++2023-01-31 18:54:07 INFO  HttpsURLConnectionClient.getTaskTemplateInfo(282) - responseCode = 200
++2023-01-31 18:54:07 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/Taras/IdeaProjects/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task13/task1310
++2023-01-31 18:54:08 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 18:55:02 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 18:55:04 INFO  HttpsURLConnectionClient.getFilteredTasks(256) - responseCode = 200
++2023-01-31 19:15:11 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 19:15:14 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 19:15:16 INFO  HttpsURLConnectionClient.manualComplete(38) - responseCode = 200
++2023-01-31 19:15:17 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 19:15:40 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 19:15:40 WARN  PluginUtil.getCurrentTask(77) - Error while retrieving the task key.
++java.lang.StringIndexOutOfBoundsException: begin -1, end 43, length 43
++	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
++	at java.base/java.lang.String.substring(String.java:2707)
++	at java.base/java.lang.String.substring(String.java:2680)
++	at com.homework.plugin.PluginUtil.getCurrentVirtualFile(PluginUtil.java:159)
++	at com.homework.plugin.PluginUtil.getCurrentTask(PluginUtil.java:68)
++	at com.homework.plugin.button.CorrectSolutionButton.actionPerformed(CorrectSolutionButton.java:59)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.actionPerformed(ActionButton.java:195)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.lambda$performAction$0(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.ex.ActionUtil.performDumbAwareWithCallbacks(ActionUtil.java:346)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.performAction(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.processMouseEvent(ActionButton.java:462)
++	at java.desktop/java.awt.Component.processEvent(Component.java:6413)
++	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
++	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5022)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
++	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
++	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
++	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2802)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:781)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:754)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:752)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:751)
++	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
++	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.java:831)
++	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:753)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:774)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:113)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
++	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
++	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
++2023-01-31 19:15:41 INFO  HttpsURLConnectionClient.getCorrectSolution(933) - responseCode = 200
++2023-01-31 19:19:06 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 19:19:06 INFO  HttpsURLConnectionClient.getFilteredTasks(256) - responseCode = 200
++2023-01-31 19:19:09 INFO  HttpsURLConnectionClient.getTaskTemplateInfo(282) - responseCode = 200
++2023-01-31 19:19:09 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/Taras/IdeaProjects/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task13/task1311
++2023-01-31 19:27:53 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 19:27:57 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 19:28:02 INFO  HttpsURLConnectionClient.manualComplete(38) - responseCode = 200
++2023-01-31 19:28:02 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 19:28:08 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 19:28:08 INFO  HttpsURLConnectionClient.getFilteredTasks(256) - responseCode = 200
++2023-01-31 19:28:11 INFO  HttpsURLConnectionClient.getTaskTemplateInfo(282) - responseCode = 200
++2023-01-31 19:28:11 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :C:/Users/Taras/IdeaProjects/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task13/task1312
++2023-01-31 19:28:12 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 19:31:58 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 19:32:00 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 19:32:02 INFO  HttpsURLConnectionClient.manualComplete(38) - responseCode = 200
++2023-01-31 19:32:03 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-01-31 19:32:09 INFO  HttpsURLConnectionClient.getWebResourceAsStream(643) - responseCode = 200
++2023-01-31 19:32:11 INFO  HttpsURLConnectionClient.getFilteredTasks(256) - responseCode = 200
++2023-01-31 19:44:55 ERROR HttpsURLConnectionClient.getServerAvailabilityStatus(730) - Error while checking server availability.
++java.net.UnknownHostException: javarush.com
++	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
++	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
++	at java.base/java.net.Socket.connect(Socket.java:633)
++	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
++	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
++	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
++	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
++	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:266)
++	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
++	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
++	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
++	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
++	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
++	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
++	at com.homework.plugin.client.HttpsURLConnectionClient.getServerAvailabilityStatus(HttpsURLConnectionClient.java:714)
++	at com.homework.plugin.button.AbstractButton.isServerAvailable(AbstractButton.java:71)
++	at com.homework.plugin.button.SelectTaskButton.actionPerformed(SelectTaskButton.java:18)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.actionPerformed(ActionButton.java:195)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.lambda$performAction$0(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.ex.ActionUtil.performDumbAwareWithCallbacks(ActionUtil.java:346)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.performAction(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.processMouseEvent(ActionButton.java:462)
++	at java.desktop/java.awt.Component.processEvent(Component.java:6413)
++	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
++	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5022)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
++	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
++	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
++	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2802)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:781)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:754)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:752)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:751)
++	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
++	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.java:831)
++	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:753)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:774)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:113)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
++	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
++	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
++2023-01-31 19:44:55 WARN  SelectTaskButton.isServerAvailable(79) - The server is unavailable. Wait a little, restart IntelliJ IDEA and try again.
++com.homework.plugin.analytics.PluginWarningException: warning
++	at com.homework.plugin.button.AbstractButton.isServerAvailable(AbstractButton.java:79)
++	at com.homework.plugin.button.SelectTaskButton.actionPerformed(SelectTaskButton.java:18)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.actionPerformed(ActionButton.java:195)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.lambda$performAction$0(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.ex.ActionUtil.performDumbAwareWithCallbacks(ActionUtil.java:346)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.performAction(ActionButton.java:174)
++	at com.intellij.openapi.actionSystem.impl.ActionButton.processMouseEvent(ActionButton.java:462)
++	at java.desktop/java.awt.Component.processEvent(Component.java:6413)
++	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
++	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5022)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
++	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
++	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
++	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2802)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:781)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:754)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:752)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:751)
++	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
++	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.java:831)
++	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:753)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:774)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:113)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
++	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
++	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
++2023-01-31 19:44:55 INFO  AnalyticsService.run(89) - 
++java.net.UnknownHostException: javarush.com
++	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
++	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
++	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
++	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
++	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
++	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
++	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
++	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
++	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
++	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
++	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
++	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
++	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
++	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
++	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
++	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:82)
++	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
++	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
++	at java.base/java.lang.Thread.run(Thread.java:833)
++2023-01-31 19:44:55 INFO  AnalyticsService.run(89) - 
++java.net.UnknownHostException: javarush.com
++	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
++	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
++	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
++	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
++	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
++	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
++	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
++	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
++	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
++	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
++	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
++	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
++	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
++	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
++	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
++	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:82)
++	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
++	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
++	at java.base/java.lang.Thread.run(Thread.java:833)
++2023-01-31 19:44:55 INFO  AnalyticsService.run(89) - 
++java.net.UnknownHostException: javarush.com
++	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
++	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
++	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
++	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
++	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
++	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
++	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
++	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
++	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
++	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
++	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
++	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
++	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
++	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
++	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
++	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:82)
++	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
++	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
++	at java.base/java.lang.Thread.run(Thread.java:833)
++2023-02-05 23:45:28 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-02-05 23:46:01 WARN  PluginUtil.getCurrentTask(77) - Error while retrieving the task key.
++java.lang.NullPointerException: Cannot invoke "com.intellij.openapi.vfs.VirtualFile.getChildren()" because "currentFile" is null
++	at com.homework.plugin.PluginUtil.getCurrentTask(PluginUtil.java:70)
++	at com.homework.plugin.extension.ProjectStartupHandler.endFileTimeTracking(ProjectStartupHandler.java:360)
++	at com.homework.plugin.extension.ProjectStartupHandler.endFileTimeTracking(ProjectStartupHandler.java:355)
++	at com.homework.plugin.extension.ProjectStartupHandler.access$300(ProjectStartupHandler.java:47)
++	at com.homework.plugin.extension.ProjectStartupHandler$1.selectionChanged(ProjectStartupHandler.java:123)
++	at com.intellij.util.messages.impl.MessageBusImplKt.invokeMethod(MessageBusImpl.kt:655)
++	at com.intellij.util.messages.impl.MessageBusImplKt.invokeListener(MessageBusImpl.kt:621)
++	at com.intellij.util.messages.impl.MessageBusImplKt.deliverMessage(MessageBusImpl.kt:395)
++	at com.intellij.util.messages.impl.MessageBusImplKt.pumpWaiting(MessageBusImpl.kt:374)
++	at com.intellij.util.messages.impl.MessageBusImplKt.access$pumpWaiting(MessageBusImpl.kt:1)
++	at com.intellij.util.messages.impl.MessagePublisher.invoke(MessageBusImpl.kt:433)
++	at jdk.proxy2/jdk.proxy2.$Proxy111.selectionChanged(Unknown Source)
++	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.lambda$fireSelectionChanged$26(FileEditorManagerImpl.java:1805)
++	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$6.lambda$run$0(FileEditorManagerImpl.java:1252)
++	at com.intellij.openapi.util.ExpirableRunnable$1.run(ExpirableRunnable.java:17)
++	at com.intellij.openapi.wm.impl.FocusManagerImpl.lambda$doWhenFocusSettlesDown$3(FocusManagerImpl.java:173)
++	at com.intellij.util.ui.EdtInvocationManager.invokeLaterIfNeeded(EdtInvocationManager.java:33)
++	at com.intellij.ide.IdeEventQueue.ifFocusEventsInTheQueue(IdeEventQueue.java:176)
++	at com.intellij.ide.IdeEventQueue.executeWhenAllFocusEventsLeftTheQueue(IdeEventQueue.java:129)
++	at com.intellij.openapi.wm.impl.FocusManagerImpl.doWhenFocusSettlesDown(FocusManagerImpl.java:169)
++	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl$6.run(FileEditorManagerImpl.java:1251)
++	at com.intellij.openapi.util.BusyObject$Impl$Simple.execute(BusyObject.java:105)
++	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.notifyPublisher(FileEditorManagerImpl.java:1248)
++	at com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.fireSelectionChanged(FileEditorManagerImpl.java:1805)
++	at com.intellij.openapi.fileEditor.impl.EditorsSplitters.setCurrentWindow$lambda-19(EditorsSplitters.kt:647)
++	at com.intellij.openapi.fileEditor.impl.EditorsSplitters.setCurrentWindow(EditorsSplitters.kt:656)
++	at com.intellij.openapi.fileEditor.impl.EditorsSplitters$MyFocusWatcher.focusedComponentChanged(EditorsSplitters.kt:771)
++	at com.intellij.openapi.wm.FocusWatcher._setFocused(FocusWatcher.java:159)
++	at com.intellij.openapi.wm.FocusWatcher.setFocusedComponentImpl(FocusWatcher.java:154)
++	at com.intellij.openapi.wm.FocusWatcher.focusGained(FocusWatcher.java:94)
++	at java.desktop/java.awt.AWTEventMulticaster.focusGained(AWTEventMulticaster.java:228)
++	at java.desktop/java.awt.AWTEventMulticaster.focusGained(AWTEventMulticaster.java:227)
++	at java.desktop/java.awt.Component.processFocusEvent(Component.java:6537)
++	at java.desktop/java.awt.Component.processEvent(Component.java:6404)
++	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
++	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5022)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1953)
++	at java.desktop/java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:1064)
++	at java.desktop/java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:688)
++	at com.intellij.ide.IdeKeyboardFocusManager.lambda$dispatchEvent$0(IdeKeyboardFocusManager.java:32)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:113)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeKeyboardFocusManager.dispatchEvent(IdeKeyboardFocusManager.java:32)
++	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4903)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/sun.awt.SunToolkit$1.run(SunToolkit.java:516)
++	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
++	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:779)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:749)
++	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
++	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:756)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:774)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:113)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
++	at com.intellij.openapi.progress.impl.PlatformTaskSupportKt$processEventQueueConsumingUnrelatedInputEvents$1$processConsumingAllInputEventsUnconditionallyJob$1.invokeSuspend(PlatformTaskSupport.kt:310)
++	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
++	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
++	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:284)
++	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
++	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
++	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
++	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
++	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
++	at com.intellij.openapi.progress.impl.PlatformTaskSupport.runBlockingModalInternal(PlatformTaskSupport.kt:76)
++	at com.intellij.openapi.progress.TasksKt.runBlockingModal(tasks.kt:155)
++	at com.intellij.openapi.progress.TasksKt.runBlockingModal(tasks.kt:92)
++	at com.intellij.vcs.commit.AbstractCommitWorkflow.executeSession(AbstractCommitWorkflow.kt:177)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler.doExecuteSession(AbstractCommitWorkflowHandler.kt:164)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler$executeSession$1$1.invoke(AbstractCommitWorkflowHandler.kt:130)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler$executeSession$1$1.invoke(AbstractCommitWorkflowHandler.kt:128)
++	at com.intellij.vcs.commit.AbstractCommitWorkflow.continueExecution$intellij_platform_vcs_impl(AbstractCommitWorkflow.kt:144)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler$executeSession$1.invoke(AbstractCommitWorkflowHandler.kt:128)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler$executeSession$1.invoke(AbstractCommitWorkflowHandler.kt:126)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler.refreshChanges$lambda-6(AbstractCommitWorkflowHandler.kt:193)
++	at com.intellij.openapi.vcs.changes.InvokeAfterUpdateCallback$CallbackBase.invokeCallback(InvokeAfterUpdateCallback.java:66)
++	at com.intellij.openapi.vcs.changes.InvokeAfterUpdateCallback$ProgressCallback$ModalWaiter.onFinished(InvokeAfterUpdateCallback.java:165)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.finishTask(CoreProgressManager.java:572)
++	at com.intellij.openapi.progress.impl.ProgressManagerImpl.finishTask(ProgressManagerImpl.java:155)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcessWithProgressSynchronously$10(CoreProgressManager.java:530)
++	at com.intellij.openapi.application.impl.ApplicationImpl.invokeAndWait(ApplicationImpl.java:408)
++	at com.intellij.openapi.application.ex.ApplicationUtil.invokeAndWaitSomewhere(ApplicationUtil.java:145)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcessWithProgressSynchronously(CoreProgressManager.java:528)
++	at com.intellij.openapi.progress.impl.ProgressManagerImpl.runProcessWithProgressSynchronously(ProgressManagerImpl.java:85)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.run(CoreProgressManager.java:371)
++	at com.intellij.openapi.progress.Task.queue(Task.java:119)
++	at com.intellij.openapi.vcs.changes.InvokeAfterUpdateCallback$ProgressCallback.startProgress(InvokeAfterUpdateCallback.java:127)
++	at com.intellij.openapi.vcs.changes.UpdateRequestsQueue.invokeAfterUpdate(UpdateRequestsQueue.java:181)
++	at com.intellij.openapi.vcs.changes.ChangeListManagerImpl.invokeAfterUpdate(ChangeListManagerImpl.java:368)
++	at com.intellij.openapi.vcs.changes.ChangeListManager.invokeAfterUpdateWithModal(ChangeListManager.java:75)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler.refreshChanges(AbstractCommitWorkflowHandler.kt:191)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler.executeSession(AbstractCommitWorkflowHandler.kt:126)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler.access$executeSession(AbstractCommitWorkflowHandler.kt:50)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler$executorCalled$1.invoke(AbstractCommitWorkflowHandler.kt:110)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler$executorCalled$1.invoke(AbstractCommitWorkflowHandler.kt:101)
++	at com.intellij.vcs.commit.AbstractCommitWorkflow$startExecution$2.invoke(AbstractCommitWorkflow.kt:136)
++	at com.intellij.vcs.commit.AbstractCommitWorkflow$startExecution$2.invoke(AbstractCommitWorkflow.kt:134)
++	at com.intellij.vcs.commit.AbstractCommitWorkflow.continueExecution$intellij_platform_vcs_impl(AbstractCommitWorkflow.kt:144)
++	at com.intellij.vcs.commit.AbstractCommitWorkflow.startExecution$intellij_platform_vcs_impl(AbstractCommitWorkflow.kt:134)
++	at com.intellij.vcs.commit.AbstractCommitWorkflowHandler.executorCalled(AbstractCommitWorkflowHandler.kt:101)
++	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
++	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
++	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
++	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
++	at com.intellij.util.EventDispatcher.dispatchVoidMethod(EventDispatcher.java:120)
++	at com.intellij.util.EventDispatcher.lambda$createMulticaster$1(EventDispatcher.java:85)
++	at jdk.proxy2/jdk.proxy2.$Proxy250.executorCalled(Unknown Source)
++	at com.intellij.openapi.vcs.changes.ui.CommitChangeListDialog$CommitExecutorAction.actionPerformed(CommitChangeListDialog.java:751)
++	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
++	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
++	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
++	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
++	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
++	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6648)
++	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3392)
++	at java.desktop/java.awt.Component.processEvent(Component.java:6413)
++	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
++	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5022)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
++	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
++	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
++	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2802)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:781)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:754)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:752)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:751)
++	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
++	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.java:831)
++	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:753)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:774)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:105)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
++	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:121)
++	at java.desktop/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:191)
++	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:236)
++	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:234)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
++	at java.desktop/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:234)
++	at java.desktop/java.awt.Dialog.show(Dialog.java:1080)
++	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$MyDialog.show(DialogWrapperPeerImpl.java:743)
++	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.show(DialogWrapperPeerImpl.java:467)
++	at com.intellij.openapi.ui.DialogWrapper.doShow(DialogWrapper.java:1676)
++	at com.intellij.openapi.ui.DialogWrapper.show(DialogWrapper.java:1634)
++	at com.intellij.openapi.ui.DialogWrapper.showAndGet(DialogWrapper.java:1648)
++	at com.intellij.openapi.vcs.changes.ui.CommitChangeListDialog.activate(CommitChangeListDialog.java:267)
++	at com.intellij.vcs.commit.SingleChangeListCommitWorkflowHandler.activate(SingleChangeListCommitWorkflowHandler.kt:59)
++	at com.intellij.openapi.vcs.changes.ui.CommitChangeListDialog.commitChanges(CommitChangeListDialog.java:224)
++	at com.intellij.openapi.vcs.changes.ui.CommitChangeListDialog.commitChanges(CommitChangeListDialog.java:146)
++	at com.intellij.openapi.vcs.actions.commit.CheckinActionUtil.performCheckIn(CheckinActionUtil.kt:121)
++	at com.intellij.openapi.vcs.actions.commit.CheckinActionUtil.performCheckInAfterUpdate$lambda-1(CheckinActionUtil.kt:87)
++	at com.intellij.openapi.vcs.changes.InvokeAfterUpdateCallback$CallbackBase.invokeCallback(InvokeAfterUpdateCallback.java:66)
++	at com.intellij.openapi.vcs.changes.InvokeAfterUpdateCallback$ProgressCallback$ModalWaiter.onFinished(InvokeAfterUpdateCallback.java:165)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.finishTask(CoreProgressManager.java:572)
++	at com.intellij.openapi.progress.impl.ProgressManagerImpl.finishTask(ProgressManagerImpl.java:155)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcessWithProgressSynchronously$10(CoreProgressManager.java:530)
++	at com.intellij.openapi.application.impl.ApplicationImpl.invokeAndWait(ApplicationImpl.java:408)
++	at com.intellij.openapi.application.ex.ApplicationUtil.invokeAndWaitSomewhere(ApplicationUtil.java:145)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcessWithProgressSynchronously(CoreProgressManager.java:528)
++	at com.intellij.openapi.progress.impl.ProgressManagerImpl.runProcessWithProgressSynchronously(ProgressManagerImpl.java:85)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.run(CoreProgressManager.java:371)
++	at com.intellij.openapi.progress.Task.queue(Task.java:119)
++	at com.intellij.openapi.vcs.changes.InvokeAfterUpdateCallback$ProgressCallback.startProgress(InvokeAfterUpdateCallback.java:127)
++	at com.intellij.openapi.vcs.changes.UpdateRequestsQueue.invokeAfterUpdate(UpdateRequestsQueue.java:181)
++	at com.intellij.openapi.vcs.changes.ChangeListManagerImpl.invokeAfterUpdate(ChangeListManagerImpl.java:368)
++	at com.intellij.openapi.vcs.changes.ChangeListManager.invokeAfterUpdateWithModal(ChangeListManager.java:75)
++	at com.intellij.openapi.vcs.actions.commit.CheckinActionUtil.performCheckInAfterUpdate(CheckinActionUtil.kt:85)
++	at com.intellij.openapi.vcs.actions.commit.CheckinActionUtil.performCommonCommitAction(CheckinActionUtil.kt:71)
++	at com.intellij.openapi.vcs.actions.commit.AbstractCommitChangesAction.actionPerformed(AbstractCommitChangesAction.kt:52)
++	at com.intellij.openapi.actionSystem.ex.ActionUtil.doPerformActionOrShowPopup(ActionUtil.java:323)
++	at com.intellij.openapi.actionSystem.ex.ActionUtil.lambda$performActionDumbAwareWithCallbacks$4(ActionUtil.java:302)
++	at com.intellij.openapi.actionSystem.ex.ActionUtil.performDumbAwareWithCallbacks(ActionUtil.java:346)
++	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAwareWithCallbacks(ActionUtil.java:302)
++	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.lambda$performAction$5(ActionMenuItem.java:296)
++	at com.intellij.openapi.wm.impl.FocusManagerImpl.runOnOwnContext(FocusManagerImpl.java:226)
++	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.performAction(ActionMenuItem.java:289)
++	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.lambda$new$0(ActionMenuItem.java:64)
++	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
++	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.lambda$fireActionPerformed$4(ActionMenuItem.java:111)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:105)
++	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:94)
++	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.fireActionPerformed(ActionMenuItem.java:111)
++	at com.intellij.ui.plaf.beg.BegMenuItemUI.doClick(BegMenuItemUI.java:526)
++	at com.intellij.ui.plaf.beg.BegMenuItemUI$MyMouseInputHandler.mouseReleased(BegMenuItemUI.java:558)
++	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6648)
++	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3392)
++	at java.desktop/java.awt.Component.processEvent(Component.java:6413)
++	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
++	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5022)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
++	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
++	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
++	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
++	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2802)
++	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4854)
++	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:781)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
++	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:754)
++	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:752)
++	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
++	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
++	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:751)
++	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
++	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.java:831)
++	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:753)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
++	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:774)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
++	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:113)
++	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
++	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
++	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
++	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
++	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
++	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
++	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
++	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
++2023-02-05 23:49:35 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
++2023-02-05 23:49:36 INFO  HttpsURLConnectionClient.getTask(603) - responseCode = 200
